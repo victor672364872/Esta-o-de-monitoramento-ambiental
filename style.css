@@ -1,71 +1,42 @@
-/* ==========================================
-   CONFIGURAÇÃO GERAL E VARIÁVEIS
-   ========================================== */
-
-:root {
-    --primary-color: #1565c0;
-    --primary-hover: #0d47a1;
-    --bg-color: #f0f4f8;
-    --card-bg: #ffffff;
-    --text-primary: #333333;
-    --footer-bg: #263238;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --radius-lg: 12px;
-    --radius-sm: 8px;
-    --transition: all 0.3s ease;
-}
-
+/* CONFIGURAÇÃO GERAL */
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* ==========================================
-   CORPO DA PÁGINA
-   ========================================== */
-
+ 
+/* CORPO DA PÁGINA */
+ 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
     text-align: center;
-    line-height: 1.5;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
-
-/* ==========================================
-   CABEÇALHO
-   ========================================== */
-
+ 
+/* CABEÇALHO */
+ 
 header {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 40px 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: #1565c0;
+    color: white;
+    padding: 30px 20px;
 }
-
+ 
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
-
-/* ==========================================
-   CONTEÚDO PRINCIPAL
-   ========================================== */
-
+ 
+/* CONTEÚDO PRINCIPAL */
+ 
 main {
     max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
+    margin: auto;
     padding: 30px 20px;
-    flex: 1; /* Garante que o footer fique ao final da tela se houver pouco conteúdo */
 }
-
+ 
 /* PAINEL DOS SENSORES */
-
+ 
 .painel {
     display: flex;
     justify-content: center;
@@ -73,147 +44,106 @@ main {
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
-
+ 
 /* CARDS */
-
+ 
 .card {
-    background-color: var(--card-bg);
+    background-color: white;
     width: 280px;
-    padding: 30px 20px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-}
-
+ 
 .card h2 {
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-    color: #555555;
+    margin-bottom: 20px;
 }
-
+ 
 /* VALORES DOS SENSORES */
-
+ 
 .valor {
-    font-size: 2.25rem;
+    font-size: 35px;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #1565c0;
 }
-
+ 
 /* SITUAÇÃO */
-
+ 
 .status {
-    background-color: var(--card-bg);
+    background-color: white;
     max-width: 600px;
     margin: 20px auto;
-    padding: 25px 20px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+ 
 #situacao {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
 }
-
-/* ÁREA DE ATUALIZAÇÃO E BOTÃO */
-
+ 
+/* ÁREA DE ATUALIZAÇÃO */
+ 
 .atualizacao {
     margin: 30px 0;
 }
-
+ 
 .atualizacao p {
     margin-bottom: 15px;
-    color: #666666;
-    font-size: 0.95rem;
 }
-
+ 
+/* BOTÃO */
+ 
 button {
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background-color: #1565c0;
+    color: white;
     border: none;
-    padding: 12px 28px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: var(--radius-sm);
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: var(--transition);
 }
-
+ 
 button:hover {
-    background-color: var(--primary-hover);
-    transform: translateY(-1px);
+    background-color: #0d47a1;
 }
-
-button:active {
-    transform: translateY(0);
-}
-
+ 
 /* SOBRE O PROJETO */
-
+ 
 .sobre {
-    background-color: var(--card-bg);
+    background-color: white;
     max-width: 800px;
     margin: 30px auto;
-    padding: 30px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow);
+    padding: 25px;
+    border-radius: 12px;
     line-height: 1.6;
-    text-align: left; /* Leitura mais confortável para textos longos */
 }
-
+ 
 .sobre h2 {
     margin-bottom: 15px;
-    text-align: center;
 }
-
-/* ==========================================
-   RODAPÉ
-   ========================================== */
-
+ 
+/* RODAPÉ */
+ 
 footer {
-    background-color: var(--footer-bg);
-    color: #ffffff;
+    background-color: #263238;
+    color: white;
     padding: 20px;
-    margin-top: auto;
-    font-size: 0.9rem;
+    margin-top: 30px;
 }
-
-/* ==========================================
-   RESPONSIVIDADE
-   ========================================== */
-
+ 
+/* RESPONSIVIDADE */
+ 
 @media (max-width: 700px) {
-    header {
-        padding: 25px 15px;
-    }
-
-    header h1 {
-        font-size: 1.6rem;
-    }
-
-    main {
-        padding: 20px 15px;
-    }
-
+ 
     .painel {
         flex-direction: column;
         align-items: center;
     }
-
+ 
     .card {
         width: 100%;
-        max-width: 400px;
-    }
-
-    .status,
-    .sobre {
-        width: 100%;
-        padding: 20px;
     }
 }
